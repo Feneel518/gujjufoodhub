@@ -55,6 +55,7 @@ export default function Home() {
             fill
             className="object-cover"
             draggable={false}
+            priority
           />
           <div className="absolute bottom-0 w-screen h-16 bg-linear-0 from-yellow-200 to-transparent"></div>
         </div>
