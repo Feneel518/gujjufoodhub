@@ -59,6 +59,17 @@ export default function Home() {
           />
           <div className="absolute bottom-0 w-screen h-16 bg-linear-0 from-yellow-200 to-transparent"></div>
         </div>
+        <div className="h-screen w-screen overflow-hidden absolute inset-0 z-1000 ">
+          <Image
+            src="/gujjufoodhubupper.png"
+            alt="Gujju Food Hub"
+            fill
+            className="object-cover"
+            draggable={false}
+            priority
+          />
+          <div className="absolute bottom-0 w-screen h-16 bg-linear-0 from-yellow-200 to-transparent"></div>
+        </div>
         <div className="z-50 md:px-24 md:py-16 p-8 py-24 shadow-2xl bg-yellow-300/30 backdrop-blur-xs rounded-2xl flex flex-col items-center justify-center space-y-4">
           <h1 className="md:text-8xl text-5xl font-sans text-black font-bold">
             Gujju Food Hub
