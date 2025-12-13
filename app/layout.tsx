@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Montserrat, Spectral } from "next/font/google";
 import { Toaster } from "sonner";
+import "./globals.css";
 
-const geistSans = Geist({
+const geistSans = Spectral({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  weight: ["400", "700", "200", "300", "600", "800"],
 });
 
-const geistMono = Geist_Mono({
+const geistMono = Montserrat({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  weight: ["400", "700", "200", "300", "600", "800"],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen overflow-x-hidden`}>
         {children}
         <Toaster richColors />
       </body>
