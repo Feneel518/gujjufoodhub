@@ -19,7 +19,7 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
         />
         <div className="absolute bottom-0 w-screen h-16 bg-linear-0 from-yellow-200 to-transparent"></div>
       </div>
-      <div className="h-screen w-screen overflow-hidden absolute inset-0 z-100 pointer-events-none hidden ">
+      <div className="h-screen w-screen overflow-hidden absolute inset-0 z-100 pointer-events-none hidden lg:flex">
         <Image
           src="/gujjufoodhubupper.png"
           alt="Gujju Food Hub"
@@ -33,7 +33,7 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
       <div className="relative z-50 mx-auto w-full max-w-3xl rounded-3xl bg-yellow-400/70 p-5 shadow-2xl backdrop-blur-md sm:p-8 lg:p-10">
         <div className="space-y-5">
           <div className="space-y-3">
-            <p className="inline-flex w-fit items-center rounded-full bg-black/10 px-3 py-1 text-xs font-semibold tracking-wide text-black sm:text-sm">
+            <p className="inline-flex w-fit items-center rounded-full bg-black/10 px-3 py-1 text-xs font-semibold tracking-wide text-black sm:text-sm mt-4">
               Authentic Gujarati Cuisine • Australia
             </p>
 
