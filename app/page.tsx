@@ -1,5 +1,6 @@
 import HeroSection from "@/components/sections/HeroSection";
 import SpecialsSection from "@/components/sections/SpecialsSection";
+import WhyGujju from "@/components/sections/WhyGujju";
 import { Button } from "@/components/ui/button";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import {
@@ -52,6 +53,7 @@ export default function Home() {
       <FloatingNav navItems={navItems} />
       <HeroSection></HeroSection>
       <SpecialsSection></SpecialsSection>
+      <WhyGujju></WhyGujju>
     </div>
   );
 }

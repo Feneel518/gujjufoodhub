@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Spectral } from "next/font/google";
+import { Modak, Montserrat, Spectral } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
 
@@ -13,6 +13,11 @@ const geistMono = Montserrat({
   variable: "--font-geist-mono",
   subsets: ["latin"],
   weight: ["400", "700", "200", "300", "600", "800"],
+});
+const modak = Modak({
+  variable: "--font-geist-modak",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen overflow-x-hidden`}>
+        className={`${geistSans.variable} ${geistMono.variable} ${modak.variable} antialiased w-screen overflow-x-hidden`}>
         {children}
         <Toaster richColors />
       </body>
