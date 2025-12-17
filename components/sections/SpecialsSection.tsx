@@ -60,7 +60,7 @@ const SpecialsSection: FC<SpecialsSectionProps> = ({}) => {
     <section
       className={`font-mono font-bold relative bg-yellow-200 py-16 sm:py-20 text-rose-600`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center mb-6 ">
+        {/* <div className="flex items-center justify-center mb-6 ">
           <div
             className={`text-3xl font-bold text-white uppercase font-mono bg-rose-600 p-2 rounded-2xl text-center  ${titan.className}`}>
             <h3 className="tracking-widest">Weekly</h3>
@@ -70,13 +70,33 @@ const SpecialsSection: FC<SpecialsSectionProps> = ({}) => {
             className={`${modal.className} text-9xl font-bold leading-0 mt-4 uppercase font-mono text-rose-600`}>
             UNLOCKED
           </div>
+        </div> */}
+        {/* Header */}
+        <div className="flex flex-col md:flex-row items-center justify-center mb-4 md:mb-6 gap-4 text-center sm:gap-6">
+          <div
+            className={`rounded-2xl bg-rose-600 p-1 md:p-3 text-white hidden md:inline-block ${titan.className}`}>
+            <h3 className="text-xl uppercase tracking-widest sm:text-2xl md:text-3xl drop-shadow-2xl">
+              Weekly
+            </h3>
+            <h3 className=" text-xl uppercase sm:text-2xl md:text-3xl">
+              Specials
+            </h3>
+          </div>
+          <div className="bg-rose-600 text-white px-4 py-2 rounded-lg md:hidden">
+            Weekly Specials
+          </div>
+
+          <div
+            className={`${modal.className} text-8xl font-extrabold uppercase leading-none text-rose-600 sm:text-7xl lg:text-9xl md:mt-2`}>
+            Unlocked
+          </div>
         </div>
         <div className="border-2 border-rose-600 border-dashed mb-6"></div>
-        <div className="grid grid-cols-2 gap-4 px-10">
+        <div className="grid grid-cols-1  md:grid-cols-2 gap-4 px-10">
           {specials.map((special, index) => (
             <div
               className={`bg-rose-600 rounded-xl shadow-lg overflow-hidden relative w-full aspect-[1.4] ${
-                index === 2 ? "col-span-2  aspect-[2.5]" : ""
+                index === 2 ? "md:col-span-2  md:aspect-[2.5]" : ""
               }`}>
               <div className="absolute bg-white shadow-xl z-10 right-0 px-8 py-1 rounded-bl-xl">
                 {special.title} - {special.price}
